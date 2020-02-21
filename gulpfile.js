@@ -1,24 +1,31 @@
-let gulp = require('gulp');
-let browserSync = require('browser-sync').create();
-let cleanCSS = require('gulp-clean-css');
-let rename = require('gulp-rename');
+const gulp = require('gulp');
+const browserSync = require('browser-sync').create();
+const cleanCSS = require('gulp-clean-css');
+const rename = require('gulp-rename');
 
-gulp.task('minify-css', () => {
+
+function style() {
     return gulp.src('./style.css')
         .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(rename('style.min.css'))
-        .pipe(gulp.dest('./build/css'));
-    });
+        .pipe(gulp.dest('./build/css'))
+        .pipe(browserSync.stream());
+}
 
-gulp.task('watch', function(){
+function watch() {
     browserSync.init({
         server: {
             baseDir: './'
         }
     });
 
-    gulp.watch('./style.css', ['minify-css']).on('change', browserSync.reload);
+    gulp.watch('./style.css', style);
     gulp.watch('./index.html').on('change', browserSync.reload);
-});
+}
 
-gulp.task('default', ['watch']);
+exports.style = style;
+exports.watch = watch;
+
+let build = gulp.parallel(style, watch);
+
+gulp.task('default', build);
