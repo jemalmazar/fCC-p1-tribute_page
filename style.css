@@ -133,11 +133,75 @@ body {
 	text-align: center;
 }
 
+/* Program Cards */
+
+.program-cards {
+	display: grid;
+	grid-template-columns: 300px;
+	grid-gap: 3em;
+	justify-content: center;
+}
+
+.program {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.program img {
+	height: auto;
+	max-width: 100%;
+}
+
+.program-info {
+	display: grid;
+	grid-template-rows: auto auto 3fr;
+	padding: 0 1em;
+	border: 1px solid var(--brandred);
+	border-top: none;
+}
+
+.program-title {
+	align-self: center;
+	font-family: Anton, sans-serif;
+	font-size: 1.45em;
+	padding: 0.25em 0;
+}
+
+.program-details {
+	font-family: Raleway, sans-serif;
+	font-size: 0.75em;
+	padding: 0 0 0.75em;
+}
+
+.program-summary {
+	font-family: Raleway, sans-serif;
+	font-size: 0.9em;
+	padding: 0.25em 0 1.5em;
+}
+
+.program-link {
+	padding: 1em;
+	border: 1px solid var(--brandred);
+	border-top: none;
+}
+
+.program-link a {
+	font-family: Raleway, sans-serif;
+	font-size: 1em;
+	color: #888888;
+	text-decoration: none;
+}
+
+.program-link a:hover {
+	color: #9e9e9e;
+	text-decoration: underline;
+}
+
 /*--------------------------------------------------------------
 # Media Breakpoints
 --------------------------------------------------------------*/
 
-@media (min-width: 700px) and (max-width: 1200px) {
+@media (min-width: 700px) and (max-width: 1300px) {
 
 	/* Hero */
 
@@ -182,9 +246,38 @@ body {
 		font-size: 1.5em;
 	}
 
+	/* Program Cards */
+
+	.program-cards {
+		grid-template-columns: repeat(2, 1fr);
+		padding: 2.5em;
+	}
+	
+	.program {
+		display: grid;
+		grid-template-rows: auto 1fr auto;
+	}
+
+	.program img {
+		height: 635px;
+		width: 100%;
+	}
+
+	.program-title {
+		font-size: 1.75em;
+	}
+
+	.program-details {
+		font-size: 1em;
+	}
+
+	.program-summary {
+		font-size: 1.15em;
+	}
+
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1301px) {
 
 	/* Hero */
 
@@ -193,33 +286,62 @@ body {
 		height: calc(100vh - 3px);
 		padding-top: 3px;
 	}
-
+	
 	#image {
-		max-height: 100%;
+		height: 100%;
 		max-width: 100%;
 		border: 1px solid white;
 	}
-
+	
 	.tribute-details h1 {
 		font-size: 2.5em;
 	}
-
+	
 	.tribute-details p {
 		font-size: 1.75em;
 	}
-
+	
 	.tribute-details hr {
 		border: 3px solid var(--brandred);
 	}
-
+	
 	/* Tribute Info */
-
+	
 	#tribute-info {
 		padding: 5rem 0;
 	}
-
+	
 	#tribute-info p {
 		font-size: 1.75em;
 	}
 
+	/* Program Cards */
+
+	.program-cards {
+		grid-template-columns: repeat(4, 0.2fr);
+		padding: 5em;
+	}
+	
+	.program {
+		display: grid;
+		grid-template-rows: auto 1fr auto;
+	}
+
+	.program img {
+		height: 635px;
+		width: 100%;
+	}
+
+	.program-title {
+		font-size: 2em;
+	}
+
+	.program-details {
+		font-size: 1.25em;
+	}
+
+	.program-summary {
+		font-size: 1.35em;
+	}
+	
 }
