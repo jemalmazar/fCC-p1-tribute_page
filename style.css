@@ -1,10 +1,15 @@
 /*--------------------------------------------------------------
-# CSS Variables
+# Global Styles & CSS Variables
 --------------------------------------------------------------*/
 
 :root {
-	--brandred: #E5100A;
+	--brandred: #991108;
 	--bgblack: #191816;
+}
+
+.container {
+	max-width: 500px;
+	margin: 0 auto;
 }
 
 /*--------------------------------------------------------------
@@ -72,6 +77,11 @@ body {
 	color: white;
 }
 
+#main {
+	display: grid;
+	grid-template-rows: 100vh auto;
+}
+
 /* Hero */
 
 .hero {
@@ -108,11 +118,28 @@ body {
 	margin: 3px 0 10px;
 }
 
+/* Tribute Info */
+
+#tribute-info {
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-content: center;
+	padding: 3rem 4rem;
+}
+
+#tribute-info p {
+	font-family: Raleway, sans-serif;
+	font-size: 1em;
+	text-align: center;
+}
+
 /*--------------------------------------------------------------
 # Media Breakpoints
 --------------------------------------------------------------*/
 
 @media (min-width: 700px) and (max-width: 1200px) {
+
+	/* Hero */
 
 	.hero {
 		grid-template-rows: 1fr;
@@ -120,9 +147,6 @@ body {
 	}
 
 	#image {
-		/* max-height: 100%;
-		max-width: 100%; */
-		/* border: 1px solid white; */
 		grid-column: 1 / -1;
 		grid-row: 1 / -1;
 		height: 100vh;
@@ -148,9 +172,21 @@ body {
 		border: 3px solid var(--brandred);
 	}
 
+	/* Tribute Info */
+
+	#tribute-info {
+		padding: 5rem 0;
+	}
+
+	#tribute-info p {
+		font-size: 1.5em;
+	}
+
 }
 
 @media (min-width: 1200px) {
+
+	/* Hero */
 
 	.hero {
 		grid-template-rows: 2fr 1fr;
@@ -174,6 +210,16 @@ body {
 
 	.tribute-details hr {
 		border: 3px solid var(--brandred);
+	}
+
+	/* Tribute Info */
+
+	#tribute-info {
+		padding: 5rem 0;
+	}
+
+	#tribute-info p {
+		font-size: 1.75em;
 	}
 
 }
