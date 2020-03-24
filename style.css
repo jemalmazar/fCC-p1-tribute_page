@@ -1,4 +1,13 @@
 /*--------------------------------------------------------------
+# CSS Variables
+--------------------------------------------------------------*/
+
+:root {
+	--brandred: #E5100A;
+	--bgblack: #191816;
+}
+
+/*--------------------------------------------------------------
 # Eric Meyer CSS Reset
 --------------------------------------------------------------*/
 
@@ -55,3 +64,116 @@ table {
 /*--------------------------------------------------------------
 # Styles
 --------------------------------------------------------------*/
+
+/* Main */
+
+body {
+	background-color: var(--bgblack);
+	color: white;
+}
+
+/* Hero */
+
+.hero {
+	display: grid;
+	grid-template-rows: 2fr 1fr;
+	justify-items: center;
+	align-items: center;
+	height: 100vh;
+}
+
+#image {
+	height: auto;
+	max-width: 100%;
+}
+
+.tribute-details {
+	text-align: center;
+	justify-content: center;
+}
+
+.tribute-details h1 {
+	font-family: Anton, sans-serif;
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+
+.tribute-details p {
+	font-family: Merriweather, serif;
+	font-size: 0.75em;
+}
+
+.tribute-details hr {
+	border: 1.5px solid var(--brandred);
+	margin: 3px 0 10px;
+}
+
+/*--------------------------------------------------------------
+# Media Breakpoints
+--------------------------------------------------------------*/
+
+@media (min-width: 700px) and (max-width: 1200px) {
+
+	.hero {
+		grid-template-rows: 1fr;
+		height: 0;
+	}
+
+	#image {
+		/* max-height: 100%;
+		max-width: 100%; */
+		/* border: 1px solid white; */
+		grid-column: 1 / -1;
+		grid-row: 1 / -1;
+		height: 100vh;
+		width: 100%;
+	}
+
+	.tribute-details {
+		grid-column: 1 / -1;
+		grid-row: 1 / -1;
+		align-self: center;
+		padding-top: 10em;
+	}
+
+	.tribute-details h1 {
+		font-size: 2.5em;
+	}
+
+	.tribute-details p {
+		font-size: 1.75em;
+	}
+
+	.tribute-details hr {
+		border: 3px solid var(--brandred);
+	}
+
+}
+
+@media (min-width: 1200px) {
+
+	.hero {
+		grid-template-rows: 2fr 1fr;
+		height: calc(100vh - 3px);
+		padding-top: 3px;
+	}
+
+	#image {
+		max-height: 100%;
+		max-width: 100%;
+		border: 1px solid white;
+	}
+
+	.tribute-details h1 {
+		font-size: 2.5em;
+	}
+
+	.tribute-details p {
+		font-size: 1.75em;
+	}
+
+	.tribute-details hr {
+		border: 3px solid var(--brandred);
+	}
+
+}
