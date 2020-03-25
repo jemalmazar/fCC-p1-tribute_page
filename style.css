@@ -225,6 +225,38 @@ body {
 	padding: 1em 5em 0;
 }
 
+/* Read More */
+
+.read-more {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 9em;
+	margin: 0 auto;
+}
+
+.read-more button {
+	background-color: var(--brandred);
+	padding: 1.5em;
+	border: none;
+	border-radius: 5px;
+}
+
+.read-more * a {
+	font-family: Raleway, sans-serif;
+	font-size: 1em;
+	color: #FFF;
+	text-decoration: none;
+}
+
+.read-more button:hover {
+	background-color: #E5100A;
+}
+
+.read-more * a:hover {
+	text-decoration: underline;
+}
+
 /*--------------------------------------------------------------
 # Media Breakpoints
 --------------------------------------------------------------*/
