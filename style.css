@@ -257,6 +257,29 @@ body {
 	text-decoration: underline;
 }
 
+/* Footer */
+
+.tribute-footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	font-family: Raleway, sans-serif;
+	text-align: center;
+	height: 5em;
+}
+
+.tribute-footer hr {
+	border: 1.5px solid var(--brandred);
+	width: 75%;
+	margin: 0 auto;
+}
+
+.tribute-footer a {
+	font-weight: 700;
+	color: var(--brandred);
+	text-decoration: none;
+}
+
 /*--------------------------------------------------------------
 # Media Breakpoints
 --------------------------------------------------------------*/
@@ -426,6 +449,10 @@ body {
 
 	.program-cards {
 		grid-template-columns: repeat(4, 0.2fr);
+	}
+
+	.tribute-footer hr {
+		width: 50%;
 	}
 
 }
