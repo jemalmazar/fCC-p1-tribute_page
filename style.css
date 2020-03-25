@@ -141,6 +141,7 @@ body {
 	grid-template-columns: 300px;
 	grid-gap: 3em;
 	justify-content: center;
+	padding: 3em 0;
 }
 
 .program {
@@ -198,11 +199,37 @@ body {
 	text-decoration: underline;
 }
 
+/* Quote */
+
+.tribute-quote {
+	background: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)),
+				left -200px bottom / cover no-repeat url("/images/abourdain-parts_unknown-oman.jpg");
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 800px;
+	max-width: 100%;
+}
+
+.quote {
+	font-family: Raleway, sans-serif;
+	font-size: 1.15em;
+	text-align: center;
+	padding: 0 5em;
+}
+
+.author {
+	font-family: Raleway, sans-serif;
+	font-size: 0.75em;
+	text-align: center;
+	padding: 1em 5em 0;
+}
+
 /*--------------------------------------------------------------
 # Media Breakpoints
 --------------------------------------------------------------*/
 
-@media (min-width: 700px) and (max-width: 1300px) {
+@media (min-width: 700px) and (max-width: 1200px) {
 
 	/* Hero */
 
@@ -275,9 +302,18 @@ body {
 		font-size: 1.15em;
 	}
 
+	/* Quote */
+
+	.tribute-quote {
+		background: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)),
+					left / cover no-repeat url("/images/abourdain-parts_unknown-oman.jpg");
+
+		font-size: 1.5em;
+	}
+
 }
 
-@media (min-width: 1301px) {
+@media (min-width: 1201px) {
 
 	/* Hero */
 
@@ -318,7 +354,7 @@ body {
 	/* Program Cards */
 
 	.program-cards {
-		grid-template-columns: repeat(4, 0.2fr);
+		grid-template-columns: repeat(2, 1fr);
 		padding: 5em;
 	}
 	
@@ -344,4 +380,20 @@ body {
 		font-size: 1.35em;
 	}
 	
+	/* Quote */
+
+	.tribute-quote {
+		background: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)),
+					center /  contain no-repeat url("/images/abourdain-parts_unknown-oman.jpg");
+		font-size: 1.5em;
+	}
+
+}
+
+@media (min-width: 1400px) {
+
+	.program-cards {
+		grid-template-columns: repeat(4, 0.2fr);
+	}
+
 }
