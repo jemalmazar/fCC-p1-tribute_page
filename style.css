@@ -86,13 +86,14 @@ body {
 
 .hero {
 	display: grid;
-	grid-template-rows: 2fr 1fr;
+	grid-template-rows: 4fr 1fr;
 	justify-items: center;
 	align-items: center;
 	height: 100vh;
 }
 
 #image {
+	align-self: start;
 	height: auto;
 	max-width: 100%;
 }
@@ -207,7 +208,6 @@ body {
 
 	.hero {
 		grid-template-rows: 1fr;
-		height: 0;
 	}
 
 	#image {
