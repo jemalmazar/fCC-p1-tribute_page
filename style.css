@@ -8,7 +8,7 @@
 }
 
 .container {
-	max-width: 500px;
+	width: 100%;
 	margin: 0 auto;
 }
 
@@ -86,7 +86,7 @@ body {
 
 .hero {
 	display: grid;
-	grid-template-rows: 4fr 1fr;
+	grid-template-rows: 1fr 1fr;
 	justify-items: center;
 	align-items: center;
 	height: 100vh;
@@ -150,7 +150,7 @@ body {
 }
 
 .program img {
-	height: auto;
+	height: 450px;
 	max-width: 100%;
 }
 
@@ -166,7 +166,7 @@ body {
 	align-self: center;
 	font-family: Anton, sans-serif;
 	font-size: 1.45em;
-	padding: 0.25em 0;
+	padding: 0.5em 0 0.25em;
 }
 
 .program-details {
@@ -270,7 +270,7 @@ body {
 
 .tribute-footer hr {
 	border: 1.5px solid var(--brandred);
-	width: 75%;
+	width: 50%;
 	margin: 0 auto;
 }
 
@@ -284,7 +284,7 @@ body {
 # Media Breakpoints
 --------------------------------------------------------------*/
 
-@media (min-width: 700px) and (max-width: 1200px) {
+@media (min-width: 540px) {
 
 	/* Hero */
 
@@ -295,8 +295,16 @@ body {
 	#image {
 		grid-column: 1 / -1;
 		grid-row: 1 / -1;
-		height: 100vh;
-		width: 100%;
+	}
+
+	/* Tribute Info */
+
+	.tribute-info { margin-top: 225px; }
+
+	#tribute-info p {
+		font-size: 1.5em;
+		width: 350px;
+		margin: 0 auto;
 	}
 
 	.tribute-details {
@@ -306,110 +314,28 @@ body {
 		padding-top: 10em;
 	}
 
-	.tribute-details h1 {
-		font-size: 2.5em;
-	}
+	.tribute-details h1 { font-size: 2.5em; }
 
-	.tribute-details p {
-		font-size: 1.75em;
-	}
+	.tribute-details p { font-size: 1.75em; }
 
-	.tribute-details hr {
-		border: 3px solid var(--brandred);
-	}
-
-	/* Tribute Info */
-
-	#tribute-info {
-		padding: 5rem 0;
-	}
-
-	#tribute-info p {
-		font-size: 1.5em;
-	}
-
-	/* Program Cards */
-
-	.program-cards {
-		grid-template-columns: repeat(2, 1fr);
-		padding: 2.5em;
-	}
-	
-	.program {
-		display: grid;
-		grid-template-rows: auto 1fr auto;
-	}
-
-	.program img {
-		height: 635px;
-		width: 100%;
-	}
-
-	.program-title {
-		font-size: 1.75em;
-	}
-
-	.program-details {
-		font-size: 1em;
-	}
-
-	.program-summary {
-		font-size: 1.15em;
-	}
+	.tribute-details hr { border: 3px solid var(--brandred); }
 
 	/* Quote */
 
 	.tribute-quote {
 		background: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)),
 					left / cover no-repeat url("/images/abourdain-parts_unknown-oman.jpg");
-
 		font-size: 1.5em;
 	}
 
 }
 
-@media (min-width: 1201px) {
-
-	/* Hero */
-
-	.hero {
-		grid-template-rows: 2fr 1fr;
-		height: calc(100vh - 3px);
-		padding-top: 3px;
-	}
-	
-	#image {
-		height: 100%;
-		max-width: 100%;
-		border: 1px solid white;
-	}
-	
-	.tribute-details h1 {
-		font-size: 2.5em;
-	}
-	
-	.tribute-details p {
-		font-size: 1.75em;
-	}
-	
-	.tribute-details hr {
-		border: 3px solid var(--brandred);
-	}
-	
-	/* Tribute Info */
-	
-	#tribute-info {
-		padding: 5rem 0;
-	}
-	
-	#tribute-info p {
-		font-size: 1.75em;
-	}
+@media (min-width: 768px) {
 
 	/* Program Cards */
 
 	.program-cards {
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(2, 300px);
 		padding: 5em;
 	}
 	
@@ -418,41 +344,26 @@ body {
 		grid-template-rows: auto 1fr auto;
 	}
 
-	.program img {
-		height: 635px;
-		width: 100%;
-	}
+	.program-title { font-size: 2em; }
 
-	.program-title {
-		font-size: 2em;
-	}
+	.program-details { font-size: 1.25em; }
 
-	.program-details {
-		font-size: 1.25em;
-	}
-
-	.program-summary {
-		font-size: 1.35em;
-	}
-	
-	/* Quote */
-
-	.tribute-quote {
-		background: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)),
-					center /  contain no-repeat url("/images/abourdain-parts_unknown-oman.jpg");
-		font-size: 1.5em;
-	}
+	.program-summary { font-size: 1.35em; }
 
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1600px) {
 
-	.program-cards {
-		grid-template-columns: repeat(4, 0.2fr);
-	}
+	.container { max-width: 1200px; }
 
-	.tribute-footer hr {
-		width: 50%;
-	}
+	/* Program Cards */
+
+	.program-cards { grid-template-columns: repeat(4, 0.2fr); }
+
+	.program img { height: 675px; }
+
+	/* Footer */
+
+	.tribute-footer hr { width: 25%; }
 
 }
