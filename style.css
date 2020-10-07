@@ -203,7 +203,7 @@ body {
 
 .tribute-quote {
 	background: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)),
-				left -200px bottom / cover no-repeat url("/images/abourdain-parts_unknown-oman.jpg");
+				left -200px bottom / cover no-repeat url("https://i.postimg.cc/632Y9GBy/abourdain-parts-unknown-oman.jpg");
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -324,7 +324,7 @@ body {
 
 	.tribute-quote {
 		background: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)),
-					left / cover no-repeat url("/images/abourdain-parts_unknown-oman.jpg");
+					left / cover no-repeat url("https://i.postimg.cc/632Y9GBy/abourdain-parts-unknown-oman.jpg");
 		font-size: 1.5em;
 	}
 
