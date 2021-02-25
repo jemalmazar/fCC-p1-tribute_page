@@ -2,13 +2,11 @@
 
 View deployed web page at: https://jemalmazar.github.io/fCC-p1-tribute_page/
 
-**Project Description**
+### Project Description
 
 A tribute page for the late Anthony Bourdain.
 
-**Tools & Methods Used**
-
-The following were used to build and design this project:
+### Tools & Methods Used
 
 - HTML5
 - CSS3
@@ -17,12 +15,12 @@ The following were used to build and design this project:
 - [Gulp](https://gulpjs.com/) (browser-sync, gulp-clean-css, gulp-rename)
 - [Figma](https://www.figma.com/)
 
-**Little Things I Learned**
+### Little Things I Learned
 
 - learned to use the `:root` pseudo-class to declare CSS Variables
 - overlapping grid items over each other using `grid-column: 1 / -1;` and `grid-row: 1 / -1;`
 
-**Project Epilogue**
+### Project Epilogue
 
 I chose to build this page after becoming big fan of Anthony Bourdain after watching Parts Unknown. His show highlighted things I love: travel, food, and culture.
 
