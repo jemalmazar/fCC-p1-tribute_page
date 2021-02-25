@@ -1,4 +1,4 @@
-# freeCodeCamp Responsive Web Design Project 1 - Tribute Page
+# freeCodeCamp: Responsive Web Design Project 1 - Tribute Page
 
 View deployed web page at: https://jemalmazar.github.io/fCC-p1-tribute_page/
 
@@ -8,7 +8,7 @@ A tribute page for the late Anthony Bourdain.
 
 **Tools & Methods Used**
 
-The following were used to build this page:
+The following were used to build and design this page:
 
 - HTML5
 - CSS3
