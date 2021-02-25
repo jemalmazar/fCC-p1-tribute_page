@@ -8,7 +8,7 @@ A tribute page for the late Anthony Bourdain.
 
 **Tools & Methods Used**
 
-The following were used to build and design this page:
+The following were used to build and design this project:
 
 - HTML5
 - CSS3
