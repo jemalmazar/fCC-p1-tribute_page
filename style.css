@@ -146,6 +146,7 @@ body {
 
 .program {
 	width: 100%;
+	max-width: 450px;
 	margin: 0 auto;
 }
 
@@ -358,7 +359,7 @@ body {
 
 	/* Program Cards */
 
-	.program-cards { grid-template-columns: repeat(4, 0.2fr); }
+	.program-cards { grid-template-columns: repeat(4, 1fr); }
 
 	.program img { height: 675px; }
 
