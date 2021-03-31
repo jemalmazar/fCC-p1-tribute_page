@@ -282,7 +282,7 @@ body {
 # Media Breakpoints
 --------------------------------------------------------------*/
 
-@media (min-width: 540px) {
+@media (min-width: 34em) {
 
 	/* Hero */
 
@@ -297,7 +297,9 @@ body {
 
 	/* Tribute Info */
 
-	.tribute-info { margin-top: 225px; }
+	.tribute-info {
+		margin-top: 225px;
+	}
 
 	#tribute-info p {
 		font-size: 1.5rem;
@@ -334,7 +336,7 @@ body {
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48em) {
 
 	/* Program Cards */
 
@@ -362,7 +364,7 @@ body {
 
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 100em) {
 
 	.container {
 		max-width: 1200px;
